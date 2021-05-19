@@ -1,0 +1,21 @@
+<!--suppress ALL-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>pwd</td>
+        </tr>
+        <tr th:each="a:${query}">
+            <td th:text="${a.id}"></td>
+            <td th:text="${a.b_name}"></td>
+            <td th:text="${a.pwd}"></td>
+        </tr>
+    </table>
+</body>
+</html>
