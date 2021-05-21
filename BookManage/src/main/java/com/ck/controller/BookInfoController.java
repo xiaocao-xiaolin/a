@@ -21,6 +21,7 @@ public class BookInfoController {
         List<BookInfo> bookInfos = service.queryAll();
         System.out.println("雷克劫傻逼");
         System.out.println("雷克劫确实傻逼");
+        System.out.println("雷大帅比");
         map.put("bookInfos",bookInfos);
         return "p_list";
     }
