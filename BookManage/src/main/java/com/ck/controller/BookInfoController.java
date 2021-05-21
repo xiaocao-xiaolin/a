@@ -20,6 +20,7 @@ public class BookInfoController {
     public String queryAll(ModelMap map){
         List<BookInfo> bookInfos = service.queryAll();
         System.out.println("雷克劫傻逼");
+        System.out.println("雷克劫确实傻逼");
         map.put("bookInfos",bookInfos);
         return "p_list";
     }
